@@ -9,5 +9,14 @@ return fournitures.map((four)=>four.nom);
 }
 const lesNoms = onlyNames();
 
-
+function total(){
+    return fournitures.map((four)=>
+    ({ 
+        nom : four.nom,
+        totalLigne: four.prix * four.quantite
+    }))
+}
+const TOTAL = total()
 console.log(lesNoms);
+console.log(TOTAL);
+
