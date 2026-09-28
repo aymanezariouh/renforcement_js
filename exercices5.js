@@ -41,7 +41,12 @@ function peutPasser(){
     console.log(false);
     return;
 }
-
+function ontBesoin(){
+    let aide = apprenant.filter((note)=>{
+        apprenant.aBesoin == true
+    });
+    console.log(apprenant);
+}
 phraseRecapulatif();
 pourcentage();
 aBesoin();
