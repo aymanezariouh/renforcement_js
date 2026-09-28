@@ -26,14 +26,19 @@ function plusque5(){
 }
 function sommeTotalePrix(){
     return fournitures.reduce((acc,rec)=>{
-        return  acc = acc + rec.prix;
+        return  acc = acc + rec.prix * rec.quantite ;
     },0);
-    return acc;
 }
-
+function sommeDunites(){
+    return fournitures.reduce((acc,rec)=>{
+        return  acc = acc + rec.quantite;
+    },0);
+}
 
 plusque5();
 console.log(lesNoms);
 console.log(TOTAL);
-console.log(sommeTotalePrix())
+console.log(sommeTotalePrix() + "dhs")
+console.log(sommeDunites())
+
 
