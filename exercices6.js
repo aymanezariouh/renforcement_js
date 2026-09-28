@@ -24,10 +24,16 @@ function plusque5(){
     console.log(mujud);
     
 }
-function sommeTotale(){
-    return fournitures.reduce((a,b))
+function sommeTotalePrix(){
+    return fournitures.reduce((acc,rec)=>{
+        return  acc = acc + rec.prix;
+    },0);
+    return acc;
 }
+
+
 plusque5();
 console.log(lesNoms);
 console.log(TOTAL);
+console.log(sommeTotalePrix())
 
