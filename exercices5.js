@@ -4,8 +4,14 @@ const apprenant = {
  exercicesTermines: 6,
  exercicesTotal: 10
 };
-function phraseRecapulatif(apprenant){
+function phraseRecapulatif(){
     let phrase = ` ${apprenant.prenom} - niveau ${apprenant.niveau} - ${apprenant.exercicesTermines}/${apprenant.exercicesTotal}`
     console.log(phrase);
 }
-phraseRecapulatif(apprenant);
+function pourcentage(){
+let pourc =  (apprenant.exercicesTermines/apprenant.exercicesTotal) * 100;
+console.log("Progression : "+pourc + "%");
+}
+phraseRecapulatif();
+pourcentage();
+
