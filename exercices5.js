@@ -16,7 +16,12 @@ console.log("Progression : "+pourc + "%");
 function aBesoin(){
 if(apprenant.exercicesTermines > 7 ) {apprenant.aBesoinAide = false }else{ apprenant.aBesoinAide = true}  ;
 }
+function affichage(){
+    for (let properties in apprenant){
+        console.log(`${properties} : ${apprenant[properties]}\n`);
+    }
+}
 phraseRecapulatif();
 pourcentage();
 aBesoin();
-
+affichage();
