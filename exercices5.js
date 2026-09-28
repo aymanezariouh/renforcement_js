@@ -4,6 +4,18 @@ const apprenant = {
  exercicesTermines: 8,
  exercicesTotal: 10
 };
+const apprenant = {
+ prenom: "Hamza2",
+ niveau: "debutant",
+ exercicesTermines: 6,
+ exercicesTotal: 10
+};
+const apprenant = {
+ prenom: "Hamza3",
+ niveau: "debutant",
+ exercicesTermines: 3,
+ exercicesTotal: 10
+};
 function phraseRecapulatif(){
     let phrase = ` ${apprenant.prenom} - niveau ${apprenant.niveau} - ${apprenant.exercicesTermines}/${apprenant.exercicesTotal}`
     console.log(phrase);
@@ -21,7 +33,17 @@ function affichage(){
         console.log(`${properties} : ${apprenant[properties]}\n`);
     }
 }
+function peutPasser(){
+    if(apprenant.exercicesTermines >= 8 && apprenant.aBesoinAide == false){
+        console.log(true);
+         return;
+    }
+    console.log(false);
+    return;
+}
+
 phraseRecapulatif();
 pourcentage();
 aBesoin();
 affichage();
+peutPasser();
