@@ -17,6 +17,17 @@ function total(){
     }))
 }
 const TOTAL = total()
+function plusque5(){
+    let mujud = fournitures.filter(four=>{
+        return four.quantite >= 5 ;
+    })
+    console.log(mujud);
+    
+}
+function sommeTotale(){
+    return fournitures.reduce((a,b))
+}
+plusque5();
 console.log(lesNoms);
 console.log(TOTAL);
 
