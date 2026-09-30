@@ -1,9 +1,11 @@
-const nomDepot = " Exercices JavaScript Warm Up ";
+const nomDepot = " Exercices    JavaScript Warm Up ";
 const phrase = "Je progresse avec des petits exercices reguliers";
 const nomComplet = "hamza bouhouch";
 
 function normaliserDepot(nom){
-    return nomDepot.trim().toLocaleLowerCase().split(" ") .join("-")
+    let kindaclean = nomDepot.trim().toLocaleLowerCase().split(" ");
+    let clean = kindaclean.filter(ele=>ele!="").join("-");
+    return clean ;
 }
 const first =normaliserDepot(" '"+ nomDepot +"' ")
 console.log(first);
