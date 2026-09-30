@@ -10,4 +10,14 @@ console.log(first);
 function compterMots(phrase ){
     return phrase.trim().toLocaleLowerCase().split(" ").length;
 }
-console.log(compterMots(phrase));   
+function getInitials(){
+    let ini = []
+    let names = nomComplet.split(" ");
+    for(let i = 0 ;  i <= names.length - 1 ;i++){
+    a = names[i]
+        ini.push(a[0]);
+    }
+    let initials = ini.join(".").toUpperCase();
+    return initials;
+}
+console.log(getInitials()); 
