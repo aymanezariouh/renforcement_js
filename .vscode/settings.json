@@ -1,3 +1,4 @@
 {
-    "dart.showTestCodeLens": false
+    "dart.showTestCodeLens": false,
+    "liveServer.settings.port": 5501
 }
